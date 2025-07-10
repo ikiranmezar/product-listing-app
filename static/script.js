@@ -139,7 +139,7 @@ function renderProducts(data) {
 
 // Fetch product list from backend (optionally with query parameters)
 function fetchProducts(query = "") {
-  fetch(`http://127.0.0.1:5000/products${query}`)
+  fetch(`https://web-production-879c6.up.railway.app/products`)
     .then((res) => res.json())
     .then((data) => {
       renderProducts(data);
