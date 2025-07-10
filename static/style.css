@@ -1,0 +1,198 @@
+/* Google Font (add inside <head>):
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+*/
+
+/* General page style */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400; /* Montserrat Regular */
+  font-size: 36px;
+}
+
+/* Filter form */
+form#filter-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+form#filter-form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form#filter-form input {
+  margin-left: 5px;
+  padding: 4px;
+  width: 80px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+form#filter-form button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Glider container */
+.glider-contain {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  padding: 0 40px;
+}
+
+/* Glider arrow buttons */
+.glider-prev,
+.glider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.glider-prev {
+  left: 0;
+}
+
+.glider-next {
+  right: 0;
+}
+
+/* Glider navigation dots */
+#dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#dots .glider-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+#dots .glider-dot.active {
+  background-color: #000;
+}
+
+/* Product list */
+#product-list {
+  display: flex;
+  gap: 20px;
+}
+
+/* Product card */
+.product-card {
+  padding: 26px;
+  width: 500px;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+/* Product image */
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Product name */
+.product-card h3 {
+  font-size: 15px;
+  font-weight: 500; /* Montserrat Medium */
+  margin: 10px 0 5px;
+}
+
+/* Price and score */
+.product-card p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+/* Color label */
+.color-label {
+  font-size: 12px;
+  font-weight: 300;
+  color: #444;
+  margin-top: 4px;
+}
+
+/* Color selector buttons */
+.color-buttons {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.color-buttons button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-buttons button:hover {
+  transform: scale(1.1);
+}
+
+/* Star rating */
+.stars {
+  display: flex;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #f5a623;
+}
+
+.stars span {
+  margin-right: 5px;
+}
+
+/* Responsive (mobile) */
+@media screen and (max-width: 768px) {
+  .product-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  form#filter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .glider-contain {
+    padding: 0 20px;
+  }
+}
