@@ -19,7 +19,7 @@ project/
 │   ├── index.html        # Main HTML page
 │   ├── style.css         # CSS styling
 │   ├── script.js         # Frontend logic
-├── products.json     # Local product data (images, weight, popularity)
+├── products.json         # Local product data (images, weight, popularity)
 ├── app.py                # Flask backend
 └── README.md             # Project documentation
 ```
